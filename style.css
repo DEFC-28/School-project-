@@ -1,0 +1,56 @@
+
+
+body {
+  background-color: #f4f4f9;
+}
+
+
+.text {
+  text-align: center;
+}
+
+.para {
+  text-align: center;
+}
+.link{
+  color: black;
+  text-align: 2px right;
+}
+footer {
+  text-align: end;
+  text-align: right;
+}
+.page {
+  color: black;
+  text-align: center;
+}
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.scroll-fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.image-viewer {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  background:  #f4f4f9;
+  padding: 1rem;
+  border-radius: 8px;
+ 
+  margin: 0 auto;
+}
+
+.image-viewer img {
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
+  flex-shrink: 0;
+}

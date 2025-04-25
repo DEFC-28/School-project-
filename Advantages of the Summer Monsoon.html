@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Law 7: Product of Powers with Same Base</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul><li><strong>school project</strong></li></ul>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#" role="button">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header>
+      <br>
+      <h3 class="text"> Analysis and Synthesis of Data</h3>
+       <p class="para">
+       The summer monsoon is one of the most important natural events in India. It usually begins in June and continues until September, bringing large amounts of rain to many parts of the country. This seasonal rainfall is a major factor in shaping India’s agriculture, water supply, and economy. However, the monsoon is not always predictable. Some years it brings heavy rains, while in others, it may arrive late or be weaker than usual. These differences can have major effects—both good and bad—on people’s lives and the environment
+       </p>
+       <h3 class="text">Positive Impacts</h3>
+     <div class="image-viewer">
+      <img src="adv3.jpg" alt="Image 1" />
+      <img src="adv2.jpeg" alt="Image 2" />
+      <img src="adv1.jpeg" alt="Image 1" />
+      <img src="adv4.jpg" alt="Image 2" />
+    
+        </div>
+      <br>
+        
+     <p class="para">       
+The summer monsoon plays a key role in India’s agriculture. It brings the rainfall needed to grow crops like rice, maize, and sugarcane. Many farmers rely on this seasonal rain because they don’t have irrigation systems. A good monsoon means a good harvest, more food, and a boost to the economy. It also helps refill rivers, lakes, and dams, providing water for drinking, farming, and electricity through hydropower.
+       <br>
+       <br>
+Besides farming, the monsoon helps cool down the very hot summer temperatures. It improves air quality by washing away dust and pollution. The rain also supports forests, plants, and animals by keeping the environment green and healthy. Fishing industries benefit too, as rivers and lakes are full during the rainy season. Overall, the monsoon is important for both people and nature in India.       
+ </p>
+    </header>
+   
+</body>
+  <script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+  
+  function goToPrev() {
+  const viewer = document.querySelector('.image-viewer');
+  viewer.scrollBy({ left: -320, behavior: 'smooth' });
+}
+
+function goToNext() {
+  const viewer = document.querySelector('.image-viewer');
+  viewer.scrollBy({ left: 320, behavior: 'smooth' });
+}
+</script>
+</html>
